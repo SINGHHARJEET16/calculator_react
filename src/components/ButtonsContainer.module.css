@@ -1,0 +1,23 @@
+.buttonscontaner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 53px;
+    font-size: 16px;
+    height: 59px;
+    background-color: #435061;
+    color: white;
+    box-shadow: 0px 0px 10px #3A4656;
+}
+
+.acButton {
+    width: 106px;
+    color: #d37864;
+}
+
+.OpButton {
+    color: #F7bd64;
+}

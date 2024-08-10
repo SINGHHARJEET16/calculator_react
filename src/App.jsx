@@ -5,7 +5,7 @@ import { useState } from "react";
 
 function App() {
   
-  const [calValue, setCalValue]= useState("0");
+  const [calValue, setCalValue]= useState("");
   const onButtonClick = (buttonName) => {
     if(buttonName==='AC'){
       setCalValue("");

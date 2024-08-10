@@ -14,7 +14,13 @@ function App() {
       setCalValue(result);
     }else if(buttonName==='←'){
       const del= calValue.substring(0,calValue.length-1);
-      setCalValue(del);
+      setCalValue(del); 
+    }   else if (buttonName === ".") {
+      const lastNumber = calValue.split(/[\+\-\*\/]/).pop();
+      if (!lastNumber.includes(".")) {
+        setCalValue(calValue + ".");
+      }
+    
     }else{
       const newDisplayValue= calValue + buttonName;
       setCalValue(newDisplayValue);
